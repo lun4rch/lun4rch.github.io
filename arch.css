@@ -2,13 +2,16 @@ body {
 	background-color: #0f131a;
 }
 
+h1 {
+	font-size: 72;
+}
+
 .main_page {
 	background-color: #222a38;
 	color:darkgrey;
 	font-family: 'Courier New', monospace;
-	margin-top: 100px;
-  	margin-bottom: 100px;
-  	margin-right: 150px;
-  	margin-left: 80px;
+	margin-top: 50px;
+  	margin-right: 50px;
+  	margin-left: 50px;
   	text-align: justify;
 }

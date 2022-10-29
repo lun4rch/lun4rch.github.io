@@ -12,6 +12,7 @@ h1 {
 	font-family: 'Courier New', monospace;
 	margin-top: 50px;
   	margin-right: 50px;
+  	margin-bottom: 5px;
   	margin-left: 50px;
   	text-align: justify;
 }
@@ -20,7 +21,7 @@ h1 {
 	background-color: #0c0d14;
 	color:darkgrey;
 	font-family: 'Courier New', monospace;
-	margin-top: 15px;
+	margin-top: 5px;
   	margin-right: 50px;
   	margin-left: 50px;
   	text-align: justify;

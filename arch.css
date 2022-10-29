@@ -10,10 +10,10 @@ h1 {
 	background-color: #222a38;
 	color:darkgrey;
 	font-family: 'Courier New', monospace;
-	margin-top: 50px;
-  	margin-right: 50px;
+	margin-top: 0px;
+  	margin-right: 150px;
+  	margin-left: 150px;
   	margin-bottom: 5px;
-  	margin-left: 50px;
   	text-align: justify;
 }
 
@@ -22,7 +22,8 @@ h1 {
 	color:darkgrey;
 	font-family: 'Courier New', monospace;
 	margin-top: 5px;
-  	margin-right: 50px;
-  	margin-left: 50px;
+  	margin-right: 150px;
+  	margin-left: 150px;
+  	margin-bottom: 5px;
   	text-align: justify;
 }

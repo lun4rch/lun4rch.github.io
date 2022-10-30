@@ -2,18 +2,22 @@ body {
 	background-color: #0f131a;
 }
 
+.heading {
+ width: 175px;
+}
+
 .heading h1 {
-  	color:red;
+  	color:darkgrey;
   	display: inline-block;
 	font-family: 'Courier New', monospace;
   	letter-spacing: 3px;
   	white-space: nowrap;
   	overflow: hidden;
   	border-right: 0.15em solid darkmagenta;
-  	width: 50%;
+  	width: 100%;
   	animation:
-  		blink 0.1s step-end infinite alternate,
-  		typing 1s steps(5);
+  		blink 0.3s step-end infinite alternate,
+  		typing 3s steps(8);
   }
 
 @keyframes blink {

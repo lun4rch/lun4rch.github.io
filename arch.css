@@ -1,19 +1,39 @@
 body {
-	background-color: #0f131a;
+	color: darkgrey;
+	scroll-behavior: smooth;
+	background-color: rgb(23, 30, 34);
+	overflow-x: hidden;
+}
+
+header {
+	width: 100%;
+	position: sticky;
+	border-radius: 8px;
+	border: 3px solid #4f0a63;
+}
+
+header button {
+	float: right;
+	margin-top: -47px;
+	margin-right: 5%;
 }
 
 .heading {
- width: 175px;
+	margin-left: 18px;
+	margin-top: -15px;
+	float: left;
+ 	padding-left: 15px;
+ 	width: 12%;
 }
 
 .heading h1 {
   	color:darkgrey;
   	display: inline-block;
 	font-family: 'Courier New', monospace;
-  	letter-spacing: 3px;
+  	letter-spacing: 4px;
   	white-space: nowrap;
   	overflow: hidden;
-  	border-right: 0.15em solid darkmagenta;
+  	border-right: 0.15em solid #4f0a63;
   	width: 100%;
   	animation:
   		blink 0.3s step-end infinite alternate,
@@ -35,27 +55,28 @@ from {
 }
 
 nav {
-	margin: 27px auto 0;
-
+	float: none;
+	margin: 0px auto 0;
 	position: relative;
-	width: 490px;
+	width: 470px;
 	height: 50px;
-	background-color: #34495e;
-	border-radius: 8px;
+	background-color: ;
+	border-radius: 0px;
 	font-size: 0;
 }
 
 nav a {
 	line-height: 50px;
 	height: 100%;
-	font-size: 15px;
+	font-family: monospace;
+	font-size: 20px;
 	display: inline-block;
 	position: relative;
 	z-index: 1;
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
-	color: darkgrey;
+	color: white;
 	cursor: pointer;
 }
 
@@ -65,7 +86,7 @@ nav .animation {
 	top: 0;
 	z-index: 0;
 	transition: all .5s ease 0s;
-	border-radius: 8px;
+	border-radius: 0px;
 }
 
 a:nth-child(1) {
@@ -87,34 +108,190 @@ a:nth-child(4) {
 nav .start-home, a:nth-child(1):hover~.animation {
 	width: 100px;
 	left: 0px;
-	background-color: darkmagenta;
+	background-color: #4f0a63;
 }
 
 nav .start-about, a:nth-child(2):hover~.animation {
 	width: 110px;
 	left: 100px;
-	background-color: darkmagenta;
+	background-color: #4f0a63;
 }
 
 nav .start-portfolio, a:nth-child(3):hover~.animation {
 	width: 160px;
 	left: 210px;
-	background-color: darkmagenta;
+	background-color: #4f0a63;
 }
 
-nav .start-contacts, a:nth-child(4):hover~.animation {
-	width: 120px;
+nav .start-contact, a:nth-child(4):hover~.animation {
+	width: 100px;
 	left: 370px;
-	background-color: darkmagenta;
+	background-color: #4f0a63;
 }
 
-.main_body {
-	background-color: #0c0d14;
-	color:darkgrey;
+.about {
+	float: none;
+	background-color: transparent;
 	font-family: 'Courier New', monospace;
 	margin-top: 0px;
-  	margin-right: 25%;
-  	margin-left: 25%;
+  	margin-right: 24%;
+  	margin-left: 24%;
   	margin-bottom: 5px;
+  	padding-top: 0px;
+  	padding-left: 15px;
+  	padding-right: 15px;
+  	padding-bottom: 0px;
   	text-align: justify;
+
+}
+
+.paragraph {
+	float: none;
+	background-color: transparent;
+	font-family: 'Courier New', monospace;
+	margin-top: 0px;
+  	margin-right: 24%;
+  	margin-left: 24%;
+  	margin-bottom: 5px;
+  	padding-top: 0px;
+  	padding-left: 15px;
+  	padding-right: 15px;
+  	padding-bottom: 0px;
+  	text-align: justify;
+}
+
+.sidebar {
+	float: left;
+	width: 15%;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-top: 20px;
+	margin-left: -215px;
+	text-align: justify;
+	border-radius: 8px;
+	border: 3px solid #4f0a63;
+}
+
+.projects {
+	background-color: #4f0a63;
+	font-family: monospace;
+	font-size: 500%;
+	text-align: center;
+	margin-left: 24%;
+	margin-right: 24%;
+	height: 200px;
+	background-color: #4f0a63;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  font-family: 'courier new', monospace;
+  color: darkgrey;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background: transparent;
+  display: inline-block;
+  border: 1px solid #4f0a63;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	width: 100%;
+  background-color: #4f0a63;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  font-family: monospace;
+  font-size: 18px;
+  color: darkgrey;
+  background: rgb(30, 40, 44);
+  margin: 5% auto 30% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #4f0a63;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
 }

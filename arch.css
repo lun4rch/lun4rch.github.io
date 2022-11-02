@@ -69,7 +69,7 @@ nav {
 	float: none;
 	margin: 0px auto 0;
 	position: relative;
-	width: 570px;
+	width: 590px;
 	height: 50px;
 	background-color: ;
 	border-radius: 0px;
@@ -101,6 +101,7 @@ nav .animation {
 }
 
 nav a:hover {
+	letter-spacing: 1px;
 	transition: border-color 0.66s, font-size 0.3s ease-out;
 	border-color: var(--color-primary);
 	font-size: 22px;
@@ -119,7 +120,7 @@ a:nth-child(3) {
 }
 
 a:nth-child(4) {
-	width: 100px;
+	width: 120px;
 }
 
 a:nth-child(5) {
@@ -164,14 +165,14 @@ nav .start-portfolio, a:nth-child(3):hover~.animation {
 }
 
 nav .start-contact, a:nth-child(4):hover~.animation {
-	width: 100px;
+	width: 120px;
 	left: 370px;
 	background-color: var(--color-accent);
 }
 
 nav .start-login, a:nth-child(5):hover~.animation {
 	width: 100px;
-	left: 470px;
+	left: 490px;
 	background-color: var(--color-accent);
 }
 

@@ -390,7 +390,8 @@ span.psw {
   background: var(--color-primary);
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid var(--color-accent);
-  width: 40%; /* Could be more or less, depending on screen size */
+  min-width: 40%;
+  max-width: 70%;
 }
 
 /* Add Zoom Animation */

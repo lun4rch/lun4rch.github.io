@@ -101,6 +101,8 @@ nav .animation {
 }
 
 nav a:hover {
+	transition: border-color 0.4s;
+	border-color: var(--color-primary);
 	font-size: 22px;
 }
 

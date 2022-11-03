@@ -1,4 +1,5 @@
 body {
+	font-family: 'courier new', monospace;
 	scroll-behavior: smooth;
 	background: var(--color-primary);
 	color: var(--font-color);
@@ -405,6 +406,77 @@ nav .start-login, a:nth-child(5):hover~.animation {
   	text-align: justify;
 
 }
+
+.wrapper {
+	margin-top: 1%;
+	text-align: center;
+	margin-left: 25%;
+	margin-right: 25%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 55ch);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper h3 {
+	font-family: monospace;
+	font-size: 150%;
+}
+
+
+.wrapper p {
+	padding: 0 15% 0 15%;
+	text-align: justify;
+}
+
+.one:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: ease-out 0.3s;
+	box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+	transition: ease-out 0.3s;
+}
+
+.two:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: ease-out 0.3s;
+	box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+	transition: ease-out 0.3s;
+}
+
+.three:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: ease-out 0.3s;
+	box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+	transition: ease-out 0.3s;
+}
+
+.four:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: ease-out 0.3s;
+	box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+	transition: ease-out 0.3s;
+}
+
+.five:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: ease-out 0.3s;
+	box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+	transition: ease-out 0.3s;
+}
+
+.six:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: ease-out 0.3s;
+	box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+	transition: ease-out 0.3s;
+}
+
 
 .paragraph {
 	float: none;

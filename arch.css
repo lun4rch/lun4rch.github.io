@@ -438,7 +438,7 @@ nav .start-login, a:nth-child(5):hover~.animation {
 .projects {
 	background-color: var(--color-accent);
 	font-family: monospace;
-	font-size: 500%;
+	font-size: 400%;
 	text-align: center;
 	margin-left: 24%;
 	margin-right: 24%;

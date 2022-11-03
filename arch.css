@@ -418,6 +418,9 @@ nav .start-login, a:nth-child(5):hover~.animation {
   grid-auto-rows: minmax(100px, auto);
 }
 
+.wrapper img {
+}
+
 .wrapper h3 {
 	font-family: monospace;
 	font-size: 150%;

@@ -102,13 +102,13 @@ header {
 	margin-top: -15px;
 	float: left;
  	padding-left: 15px;
- 	width: 200px;
+ 	width: 180px;
 }
 
 .heading h1 {
+	font-weight: 1000;
   	color:var(--font-color);
   	display: inline-block;
-	font-family: 'Courier New', monospace;
   	letter-spacing: 4px;
   	white-space: nowrap;
   	overflow: hidden;

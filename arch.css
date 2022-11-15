@@ -102,7 +102,6 @@ header {
 	margin-top: -15px;
 	float: left;
  	padding-left: 15px;
- 	width: 180px;
 }
 
 .heading h1 {
@@ -410,8 +409,6 @@ nav .start-login, a:nth-child(5):hover~.animation {
 .wrapper {
 	margin-top: 1%;
 	text-align: center;
-	margin-left: 25%;
-	margin-right: 25%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 55ch);
   gap: 10px;
@@ -428,7 +425,7 @@ nav .start-login, a:nth-child(5):hover~.animation {
 
 
 .wrapper p {
-	padding: 0 15% 0 15%;
+	padding: 0 5% 0 5%;
 	text-align: justify;
 }
 

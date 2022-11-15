@@ -18,26 +18,27 @@ html {
 .theme-dark {
    --color-primary: #0e0e0e;
    --color-secondary: #1e1e2e;
-   --color-accent: #3F3930;
+   --color-accent: #44007F;
    --font-color: darkgrey;
    --stars: #ddd;
 }
 
 .heading {
+  z-index: 1;
   margin-left: 18px;
-  margin-top: -15px;
+  margin-top: -5px;
   float: left;
   padding-left: 15px;
 }
 
 .heading h1 {
-  font-weight: 1000;
+  font-weight: 400;
     color:var(--font-color);
     display: inline-block;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 0.15em solid var(--font-color);
+    border-right: 0.15em solid var(--color-accent);
     width: 100%;
     animation:
       blink 0.3s step-end infinite alternate,
@@ -58,8 +59,107 @@ from {
 
 }
 
+nav {
+  z-index: 1;
+  float: none;
+  margin: 0px auto 0;
+  position: relative;
+  width: 590px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 0;
+}
+
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-family: monospace;
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 0px;
+}
+
+nav a:hover {
+  letter-spacing: 1px;
+  transition: border-color 0.66s, font-size 0.3s ease-out;
+  border-color: var(--color-primary);
+  font-size: 22px;
+}
+
+a:nth-child(1) {
+  width: 100px;
+}
+
+a:nth-child(2) {
+  width: 110px;
+}
+
+a:nth-child(3) {
+  width: 160px;
+}
+
+a:nth-child(4) {
+  width: 120px;
+}
+
+a:nth-child(5) {
+  margin-left: 18px;
+  width: 120px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0px;
+  border-radius: 8px;
+  background-color: var(--color-accent);
+}
+
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  border-radius: 8px;
+  background-color: var(--color-accent);
+}
+
+nav .start-portfolio, a:nth-child(3):hover~.animation {
+  width: 160px;
+  left: 210px;
+  border-radius: 8px;
+  background-color: var(--color-accent);
+}
+
+nav .start-contact, a:nth-child(4):hover~.animation {
+  width: 120px;
+  left: 370px;
+  border-radius: 8px;
+  background-color: var(--color-accent);
+}
+
+nav .start-login, a:nth-child(5):hover~.animation {
+  width: 100px;
+  left: 490px;
+  border-radius: 8px;
+  background-color: var(--color-accent);
+}
+
 /* The switch - the box around the slider */
 .switch {
+  z-index: 1;
   position: relative;
   display: inline-block;
   width: 60px;
@@ -199,6 +299,7 @@ input:checked + .slider:before {
   margin-top: -60px;
   padding-left: 10px;
 }
+
 #title span {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
@@ -212,4 +313,110 @@ input:checked + .slider:before {
   to {
     transform: translateY(-2000px);
   }
+}
+
+.about {
+  float: none;
+  background-color: transparent;
+  font-family: 'Courier New', monospace;
+  margin-top: 0px;
+    margin-right: 24%;
+    margin-left: 24%;
+    margin-bottom: 5px;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    text-align: justify;
+
+}
+
+.wrapper {
+  z-index: 1;
+  margin-top: 1%;
+  text-align: center;
+  display: grid;
+  margin-left: 5%;
+  margin-right: 5%;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper img {
+}
+
+.wrapper h3 {
+  font-family: monospace;
+  font-size: 150%;
+}
+
+
+.wrapper p {
+  padding: 0 15% 0 15%;
+  text-align: justify;
+}
+
+.one:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: ease-out 0.3s;
+  box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+  transition: ease-out 0.3s;
+}
+
+.two:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: ease-out 0.3s;
+  box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+  transition: ease-out 0.3s;
+}
+
+.three:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: ease-out 0.3s;
+  box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+  transition: ease-out 0.3s;
+}
+
+.four:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: ease-out 0.3s;
+  box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+  transition: ease-out 0.3s;
+}
+
+.five:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: ease-out 0.3s;
+  box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+  transition: ease-out 0.3s;
+}
+
+.six:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: ease-out 0.3s;
+  box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.1);
+  transition: ease-out 0.3s;
+}
+
+
+.paragraph {
+  float: none;
+  background-color: transparent;
+  font-family: 'Courier New', monospace;
+  margin-top: 0px;
+    margin-right: 24%;
+    margin-left: 24%;
+    margin-bottom: 5px;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    text-align: justify;
 }

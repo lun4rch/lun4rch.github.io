@@ -24,11 +24,18 @@ html {
 }
 
 .heading {
-  z-index: 1;
+  z-index: 2;
   margin-left: 18px;
   margin-top: -5px;
   float: left;
   padding-left: 15px;
+}
+
+#logo img {
+  text-shadow: 5px 5px 50px #666;
+  position: absolute;
+  left: 25px;
+  width: 150px;
 }
 
 .heading h1 {
@@ -290,20 +297,26 @@ input:checked + .slider:before {
   top: 50%;
   left: 0;
   right: 0;
-  color: var(--stars);
+  color: var(--font-color);
   text-align: center;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 50px;
+  font-family: monospace;
+  font-weight: 100;
+  font-size: 72px;
   letter-spacing: 10px;
   margin-top: -60px;
   padding-left: 10px;
 }
 
 #title span {
-  background: -webkit-linear-gradient(white, #38495a);
+  cursor: default;
+  background: var(--font-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#title span:before {
+  letter-spacing: 15px;
+  transition: letter-spacing 1s ease-in-out;
 }
 
 @keyframes animStar {

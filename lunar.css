@@ -16,8 +16,8 @@ html {
 }
 
 .theme-dark {
-   --color-primary: #0e0e0e;
-   --color-secondary: #1e1e2e;
+   --color-primary: #000;
+   --color-secondary: #112;
    --color-accent: #44007F;
    --font-color: #ccc;
    --stars: #ddd;

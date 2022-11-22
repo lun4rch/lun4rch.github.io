@@ -447,7 +447,7 @@ input:checked + .slider:before {
 }
 
 .content-slider {
-  cursor: default;
+  z-index: -1;
   margin-top: -25px;
   text-align: left;
   width: 100%;
@@ -480,6 +480,7 @@ input:checked + .slider:before {
 
 .slide .quote {
   width: fit-content;
+  --quote-width: width;
   padding: 5px;
   background-color: var(--font-color);
   color: var(--color-primary);
@@ -504,6 +505,40 @@ input:checked + .slider:before {
 
 .slide li.anim5 {
   animation: cycle5 10s linear infinite;
+}
+
+.dropdown {
+  z-index: 10000;
+  position: absolute;
+  cursor: pointer;
+  width: 380px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Courier New', monospace;
+  margin-top: 74px;
+  margin-left: 590px;
+}
+
+.dropdown .list {
+  margin-top: -18px;
+  margin-left: -4px;
+  display: none;
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.dropdown:hover .list {
+  z-index: 5000;
+  display: block;
+  color: var(--color-primary);
+  background-color: var(--font-color);
+}
+
+.list p:hover {
+  opacity: 0.6;
 }
 
 @keyframes cycle {

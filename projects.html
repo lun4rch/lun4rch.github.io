@@ -81,6 +81,34 @@
 </footer>
 
 <script>
+
+const projectboard = document.getElementById('projectboard')
+
+var ctx;
+var cposX;
+var cposY;
+
+function init() {
+  ctx = projectboard.getContext("2d");
+  projectboard.addEventListener("mousemove", mouseMove, false);
+}
+
+function mouseMove(e){
+  e.preventDefault();
+  cposX = e.pageX – canvas.offsetLeft;
+  cposY = e.pageY – canvas.offsetTop;
+  displayMousePosition();
+}
+
+function displayMousePosition(){
+  ctx.textAlign = “center”;
+  ctx.textBaseline = “middle”;
+  ctx.fillStyle = “rgb(255,255,255)”;
+  var str = “x = ” + cposX + “, ” + “y = ” + cposY;
+  ctx.clearRect(0,0, canvas.width, canvas.height);
+  ctx.fillText(str, canvas.width/2, canvas.height/2,canvas.width-20);
+}
+
    // Get the modal
 var modal = document.getElementById('id01');
 
